@@ -1,8 +1,11 @@
 import random
 
 length = random.randint(3, 10)
+original = []
 
-original = [random.randint(0, 100) for i in range(length)]
+for i in range(length):
+    num = random.randint(0, 100)  
+    original.append(num)      
 
 new_list = [original[0], original[2], original[-2]]
 
